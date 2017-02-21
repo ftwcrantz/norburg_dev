@@ -1,0 +1,9 @@
+/* Welcome to forms.scss - Here are rules that control your forms.*/
+
+//Form Specific
+input[type=search] {
+	
+	&:focus {
+		outline: 0;
+	}
+}

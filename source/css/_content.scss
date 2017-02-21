@@ -1,0 +1,20 @@
+/* Welcome to content.scss - Here are rules that does not fit anywhere else */
+
+//Body and Wrapper rules
+* {
+	margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: $background;
+}
+
+img {
+	height: auto;
+}
+
+.wrapper {
+  padding: 0 20px;
+  clear: both;
+}

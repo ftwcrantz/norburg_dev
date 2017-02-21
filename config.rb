@@ -18,12 +18,12 @@ page '/*.txt', layout: false
 
 # General configuration
 
-set :css_dir,    'css'
-set :js_dir,     'js'
 set :images_dir, 'images'
+set :js_dir, 'js'
+set :css_dir, 'css'
 set :fonts_dir, 'fonts'
 
-activate :relative_assets
+set :relative_links, true
 
 # Reload the browser automatically whenever files change
 configure :development do
