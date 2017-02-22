@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $pri_grey;
   font-weight: bold;
-  font-family: Times, sans-serif;
+  font-family: Times, serif;
   letter-spacing: 1px;
 }
 h1 {
@@ -48,11 +48,17 @@ h3 {
 
 // Text
 p {
-  @include x-rem(font-size, 1.8);
+  @include x-rem(font-size, 1.5);
   margin-bottom: 1.5em;
 }
 
 p.small {
+  @include x-rem(font-size, 1.2);
+}
+
+p.header {
+  font-family: Helvetica, sans-serif;
+  color: #000;
   @include x-rem(font-size, 1.2);
 }
 
@@ -62,7 +68,7 @@ a {
   text-decoration: none;
   color: $pri_text;
   font-weight: bold;
-  font-family: Helvetica, sans-serif;
+  font-family: Times, serif;
   border-bottom: 1px solid $pri_text;
   &:hover {
     color: rgba(0,0,0,0.5);
