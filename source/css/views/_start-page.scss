@@ -22,3 +22,13 @@
   margin-right: auto;
   margin-top: 20px;
 }
+
+.coworkers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 33%;
+    height: 500px;
+  }
+}
