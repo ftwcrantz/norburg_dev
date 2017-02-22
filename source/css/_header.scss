@@ -1,18 +1,26 @@
-body {
+
+
+header {
   margin-top: 20px;
   margin-bottom: 20px;
-}
+  a {
+    border-bottom: none;
 
-a {
-  text-decoration: none;
-  border-bottom: 0px;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .logo-img {
-    width: 500px;
+    &:hover {
+      border-bottom: none;
+      fill: blue;
+    }
   }
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-img {
+      max-width: 50%;
+    }
+    .icon-images {
+      height: 35px;
+    }
+  }
+
 }
