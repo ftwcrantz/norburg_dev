@@ -20,18 +20,16 @@ body {
 // headers
 h1, h2, h3, h4, h5, h6 {
   color: $pri_grey;
-  font-weight: bold;
   font-family: Times, serif;
   letter-spacing: 1px;
 }
 h1 {
-  @include x-rem(font-size, 3);
-  line-height: 1.2;
+  @include x-rem(font-size, 6);
   margin-bottom: 30px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border-top: solid $pri_grey 2px;
-  border-bottom: solid $pri_grey 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-top: solid $pri_text 2px;
+  border-bottom: solid $pri_text 2px;
   @include single-column {
     @include x-rem(font-size, 2.4);
   }
@@ -40,7 +38,15 @@ h1.bright {
   color: #fff;
 }
 h2 {
-  @include x-rem(font-size, 2.6);
+  @include x-rem(font-size, 1.8);
+  color: $pri_text;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-bottom: solid $pri_text 2px;
+  text-transform: uppercase;
+  :first-of-type {
+    border-top: solid $pri_text 2px;
+  }
 }
 h3 {
   @include x-rem(font-size, 1.8);
@@ -59,6 +65,7 @@ p.small {
 p.header {
   font-family: Helvetica, sans-serif;
   color: #000;
+  text-transform: uppercase;
   @include x-rem(font-size, 1.2);
 }
 
