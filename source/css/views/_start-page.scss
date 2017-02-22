@@ -35,6 +35,22 @@
     @include single-column {
       width: 100%;
     }
+    .coworkers-name,
+    .coworkers-mobile {
+      margin-bottom: 10px;
+      font-family: Helvetica, sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      @include x-rem(font-size, 1.2);
+    }
+    .coworkers-title,
+    .coworkers-email,
+    .coworkers-tel, {
+      margin-bottom: 0;
+      font-family: Helvetica, sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      @include x-rem(font-size, 1.2);
+    }
   }
-
 }
