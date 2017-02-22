@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -17,19 +17,24 @@ body {
   line-height: 1.5;
 }
 
-// headers 
+// headers
 h1, h2, h3, h4, h5, h6 {
-  color: $pri_blue;
+  color: $pri_grey;
   font-weight: bold;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: Times, sans-serif;
   letter-spacing: 1px;
 }
 h1 {
   @include x-rem(font-size, 3);
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: solid $pri_grey 2px;
+  border-bottom: solid $pri_grey 2px;
+  border-length: 20px;
   @include single-column {
-    @include x-rem(font-size, 2.4);    
+    @include x-rem(font-size, 2.4);
   }
 }
 h1.bright {
@@ -56,10 +61,10 @@ p.small {
 a {
   @include x-rem(font-size, 1.6);
   text-decoration: none;
-  color: $pri_orange;
+  color: $pri_text;
   font-weight: bold;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid $pri_orange;
+  font-family: Helvetica, sans-serif;
+  border-bottom: 1px solid $pri_text;
   &:hover {
     color: rgba(0,0,0,0.5);
     border-bottom: 1px solid rgba(0,0,0,0.5);
