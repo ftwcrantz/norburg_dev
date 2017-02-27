@@ -1,8 +1,5 @@
-
-
 header {
   margin-top: 20px;
-  margin-bottom: 20px;
   a {
     border-bottom: none;
 
@@ -19,7 +16,29 @@ header {
       max-width: 50%;
     }
     .icon-images {
-      height: 35px;
+      width: 40px;
+    }
+  }
+  #mobile-menu {
+    margin-top: 10px;
+    li {
+      a {
+        display: block;
+        width: 40%;
+        margin: 0 auto -1px auto;
+        @include x-rem(font-size, 4.8);
+        color: $pri_grey;
+        font-family: 'Caslon', serif;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-weight: lighter;
+        border-top: solid $pri_text 1px;
+        border-bottom: solid $pri_text 1px;
+        @include single-column {
+          @include x-rem(font-size, 2.6);
+          width: 55%;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 // Media Queries in Sass 3.2
 //
 // These mixins make media queries a breeze with Sass.
-// The media queries from mobile up until desktop all 
+// The media queries from mobile up until desktop all
 // trigger at different points along the way
 //
 // And important point to remember is that and width
@@ -50,6 +50,13 @@ $tour-column-break: 960px;
 // Single column style
 @mixin single-column {
   @media only screen and (max-width : $single-column-break) {
+    @content;
+  }
+}
+
+// Single column style
+@mixin single-column-smaller {
+  @media only screen and (max-width : 600px) {
     @content;
   }
 }
@@ -174,7 +181,7 @@ $tour-column-break: 960px;
     }
 }
 
-// Everything below and including the desktop 
+// Everything below and including the desktop
 @mixin desktop-and-below {
     @media only screen and (max-width : $mq-desktop) {
         @content;
