@@ -52,8 +52,11 @@ h3 {
 
 // Text
 p {
-  @include x-rem(font-size, 1.5);
+  @include x-rem(font-size, 1.7  );
   margin-bottom: 1.5em;
+  @include single-column {
+    @include x-rem(font-size, 1.9);
+  }
 }
 i {
   font-style: italic;

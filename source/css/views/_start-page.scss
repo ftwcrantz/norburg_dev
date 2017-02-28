@@ -32,14 +32,13 @@
       @include x-rem(font-size, 4.8);
       color: $pri_grey;
       font-family: 'Caslon', serif;
-      letter-spacing: 1px;
       font-weight: lighter;
       line-height: 1.2;
       border-top: solid $pri_text 1px;
       border-bottom: solid $pri_text 1px;
       @include single-column {
-        @include x-rem(font-size, 2.6);
-        width: 55%;
+        @include x-rem(font-size, 4.6);
+        width: 75%;
       }
     }
     .sub-sites {
@@ -68,7 +67,8 @@
         font-family: 'CaslonCAPS', serif;
         @include x-rem(font-size, 2);
         @include single-column {
-          @include x-rem(font-size, 1.4);
+          @include x-rem(font-size, 2.8);
+          width: 75%;
         }
       }
       .sub-content {
@@ -132,6 +132,8 @@
           div {
             margin: 20px 0 20px 0;
             position: relative;
+            line-height: 1.8;
+            letter-spacing: 0.8px;
             .coworkers-name,
             .coworkers-mobile {
               margin-bottom: 10px;
@@ -155,6 +157,7 @@
               text-transform: uppercase;
               border-bottom: none;
               cursor: pointer;
+              @include x-rem(font-size, 1.2);
             }
           }
         }
@@ -189,6 +192,8 @@
         text-transform: uppercase;
         border-bottom: none;
         text-align: center;
+        line-height: 1.8;
+        letter-spacing: 0.8px;
         @include x-rem(font-size, 1.2);
       }
     }

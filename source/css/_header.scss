@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     .logo-img {
-      max-width: 50%;
+      max-width: 70%;
     }
     .icon-images {
       width: 40px;
@@ -26,7 +26,7 @@ header {
         display: block;
         width: 40%;
         margin: 0 auto -1px auto;
-        @include x-rem(font-size, 4.8);
+        @include x-rem(font-size, 6.6);
         color: $pri_grey;
         font-family: 'Caslon', serif;
         letter-spacing: 1px;
