@@ -16,6 +16,34 @@
   <body class="<%= page_classes %>">
     <%= yield %>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.gridder.min.js"></script>
     <script src="js/mini-toggler.js"></script>
+    <script>
+      $(function() {
+      
+          // Call Gridder
+          $('.gridder').gridderExpander({
+              scroll: false,
+              scrollOffset: 30,
+              scrollTo: "panel",                  // panel or listitem
+              animationSpeed: 400,
+              animationEasing: "easeInOutExpo",
+              showNav: false,                      // Show Navigation
+              nextText: "Next",                   // Next button text
+              prevText: "Previous",               // Previous button text
+              closeText: "Close",                 // Close button text
+              onStart: function(){
+                  //Gridder Inititialized
+              },
+              onContent: function(){
+                  //Gridder Content Loaded
+              },
+              onClosed: function(){
+                  //Gridder Closed
+              }
+          });
+      
+      });
+    </script>
   </body>
 </html>

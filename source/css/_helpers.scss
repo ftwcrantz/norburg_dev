@@ -76,6 +76,20 @@
 }
 
 
+//Mixin for coworker grid
+@mixin rowMachine($numPerRow, $margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-of-type(#{$numPerRow}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+
 @mixin bleed($padding: $grid-padding, $sides: left right) {
   @if $sides == 'all' {
     margin: - $padding;

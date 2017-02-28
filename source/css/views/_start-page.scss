@@ -85,20 +85,53 @@
     }
     .sub-coworkers {
       margin: 30px 0;
-      .coworkers {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;;
-        flex-wrap: wrap;
+      .gridder {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        font-size:0;
+        .selectedItem {
+          div {
+            // span {
+            //   display: none;
+            // }
+            &:after,
+            &:before {
+              bottom: -23.4%;
+              // bottom: -68.4%;
+              z-index: 10;
+              left: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+            }
+            &:after {
+              border-color: rgba(255, 255, 255, 0);
+              border-bottom-color: #F7F8F8;
+              border-width: 10px;
+              margin-left: -10px;
+            }
+            &:before {
+              border-color: rgba(0, 0, 0, 0);
+              border-bottom-color: #000;
+              border-width: 11px;
+              margin-left: -11px;
+            }
+          }
+        }
         li {
-          width: 32.5%;
-          margin-bottom: 20px;
-          word-wrap: break-word;
+          display: inline-block;
+          vertical-align: top;
+          @include rowMachine(3,1%);
           @include single-column {
-            width: 100%;
+            @include rowMachine(1,1%);
           }
           div {
-            margin: 20px 0 0 0;
+            margin: 20px 0 20px 0;
+            position: relative;
             .coworkers-name,
             .coworkers-mobile {
               margin-bottom: 10px;
@@ -116,26 +149,34 @@
               text-transform: uppercase;
               @include x-rem(font-size, 1.2);
             }
-            a {
+            span {
               font-family: 'Copper';
               color: $pri_grey;
               text-transform: uppercase;
               border-bottom: none;
+              cursor: pointer;
             }
           }
         }
-        #coworkers-more,
-        #coworkers-more1 {
-          border-top: 1px solid #000;
-          padding-top: 20px;
-          span {
-            font-family: 'Copper';
-          }
-          p {
-            text-align: center;
-            font-family: 'Caslo';
-            text-transform: none;
-            color: $pri_text;
+      }
+      .coworkers-content {
+        display: none;
+      }
+      .gridder-expanded-content {
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        span {
+          font-family: 'Copper';
+        }
+        p {
+          max-width: 50%;
+          margin: 0 auto 30px auto;
+          text-align: center;
+          font-family: 'Caslo';
+          text-transform: none;
+          color: $pri_text;
+          @include single-column {
+            max-width: 100%;
           }
         }
       }
