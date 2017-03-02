@@ -8,6 +8,10 @@
 html, body {
   height: 100%;
   background-color: $background;
+  margin-top: 60px;
+  @include single-column {
+  	margin-top: 40px;
+  }
 }
 
 img {
@@ -17,4 +21,7 @@ img {
 .wrapper {
   padding: 0 20px;
   clear: both;
+  @include single-column {
+  	padding: 0 10px;
+  }
 }

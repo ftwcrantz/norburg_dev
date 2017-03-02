@@ -80,7 +80,7 @@
 @mixin rowMachine($numPerRow, $margin) {
   width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
   &:nth-child(n) {
-    margin-bottom: $margin;
+    margin-bottom: 0;
     margin-right: $margin;
   }
   &:nth-of-type(#{$numPerRow}n) {

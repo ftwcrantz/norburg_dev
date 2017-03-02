@@ -1,5 +1,10 @@
 header {
-  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #f7f8f8;
+  z-index: 100;
   a {
     border-bottom: none;
 
@@ -9,6 +14,7 @@ header {
     }
   }
   .icon-container {
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,23 +26,26 @@ header {
     }
   }
   #mobile-menu {
-    margin-top: 10px;
-    li {
-      a {
-        display: block;
-        width: 40%;
-        margin: 0 auto -1px auto;
-        @include x-rem(font-size, 6.6);
-        color: $pri_grey;
-        font-family: 'Caslon', serif;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        font-weight: lighter;
-        border-top: solid $pri_text 1px;
-        border-bottom: solid $pri_text 1px;
-        @include single-column {
-          @include x-rem(font-size, 2.6);
-          width: 55%;
+    ul {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      li {
+        a {
+          display: block;
+          width: 40%;
+          margin: 0 auto -1px auto;
+          @include x-rem(font-size, 6.6);
+          color: $pri_grey;
+          font-family: 'Caslon', serif;
+          letter-spacing: 1px;
+          line-height: 1.2;
+          font-weight: lighter;
+          border-top: solid $pri_text 1px;
+          border-bottom: solid $pri_text 1px;
+          @include single-column {
+            @include x-rem(font-size, 2.6);
+            width: 55%;
+          }
         }
       }
     }

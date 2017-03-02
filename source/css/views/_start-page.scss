@@ -1,9 +1,9 @@
 .index {
   .content-section {
     margin-top: 30px;
-    img {
-      display: block;
-    }
+    // img {
+    //   display: block;
+    // }
     .image-text {
       position: relative;
       div {
@@ -97,7 +97,7 @@
             // }
             &:after,
             &:before {
-              bottom: -23.4%;
+              bottom: -1px;
               // bottom: -68.4%;
               z-index: 10;
               left: 50%;
@@ -130,7 +130,7 @@
             @include rowMachine(1,1%);
           }
           div {
-            margin: 20px 0 20px 0;
+            padding: 20px 0;
             position: relative;
             line-height: 1.8;
             letter-spacing: 0.8px;
