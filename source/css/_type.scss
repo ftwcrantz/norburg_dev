@@ -22,7 +22,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $pri_grey;
   font-family: 'Caslon', serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 h1 {
   @include x-rem(font-size, 4.8);
